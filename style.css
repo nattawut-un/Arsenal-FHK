@@ -1,0 +1,82 @@
+* {
+  font-family: 'Poppins', 'Chakra Petch', sans-serif;
+}
+body {
+  background-image: url('./images/bg.webp');
+  background-attachment: fixed;
+}
+nav {
+  background: hsla(220, 13%, 91%, 0.9);
+  backdrop-filter: blur(20px);
+}
+a {
+  text-decoration: none;
+}
+img {
+  object-fit: cover;
+}
+
+.rice {
+  background-color: hsl(50, 100%, 99%);
+}
+.noodle {
+  background-color: hsl(90, 100%, 99%);
+}
+.drink {
+  background-color: hsl(200, 100%, 99%);
+}
+.icecream {
+  background-color: hsl(300, 100%, 99%);
+}
+
+/* .carousel-caption {
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+} */
+
+#hit-main {
+  width: 50%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+}
+#hit-menu {
+  overflow: auto;
+}
+
+.obj-cover {
+  aspect-ratio: 5/3;
+  object-fit: cover;
+}
+
+.popup-anim {
+  transition: transform .2s ease;
+  transform: scale(1);
+}
+.popup-anim:hover {
+  transform: scale(1.05);
+}
+
+.card {
+  cursor: default;
+}
+
+.recommend-image {
+  height: 365px;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+}
+
+
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
