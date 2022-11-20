@@ -126,7 +126,7 @@ else if (isset($_POST['delete_all'])) {
         $json = json_decode($row['foods']);
         foreach ($json as $food) {
           echo '<li class="list-group-item">'.$food[2]
-          .'&nbsp;&nbsp;&nbsp;&nbsp;<span class="badge bg-white text-primary border border-1 rounded-pill">x'.$food[0]
+          .'&nbsp;&nbsp;<span class="badge bg-white text-primary border border-1 rounded-pill">x'.$food[0]
           .'</span>&nbsp;<span class="badge bg-primary rounded-pill">'.$food[3].'.-</span><br>
           <span class="text-black-50"><i>'.$food[1].'</i></span></li>';
         }

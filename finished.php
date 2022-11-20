@@ -73,7 +73,7 @@ if (!isset($_POST['firstName'])) {
       foreach ($foodlist_json as $food) {
         echo '<li class="list-group-item">'.$food[2]
         .'&nbsp;&nbsp;&nbsp;&nbsp;<span class="badge bg-white text-primary border border-1 rounded-pill">x'.$food[0]
-        .'</span>&nbsp;<span class="badge bg-primary rounded-pill">'.$food[3].'.-</span></li>';
+        .'</span>&nbsp;<span class="badge bg-primary rounded-pill">'.$food[3].'.-</span><br><i>'.$food[1].'</i></li>';
       }
       ?>
       </ul><br>

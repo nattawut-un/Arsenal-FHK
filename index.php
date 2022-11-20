@@ -24,25 +24,25 @@
         </div>
         <div class="carousel-inner w-100">
           <div class="carousel-item active">
-            <img src="./images/foods/1.jpg" class="d-block w-100 rounded recommend-image" alt="...">
+            <img src="./images/foods/1.jpg" class="d-block w-100 rounded recommend-image">
             <div class="p-5 text-center">
               <a href="menu.php?id=1" class="btn bg-black rounded-pill px-4 fs-1 text-white">ก๋วยเตี๋ยวคั่วไก่</a>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="./images/foods/2.jpg" class="d-block w-100 rounded recommend-image" alt="...">
+            <img src="./images/foods/2.jpg" class="d-block w-100 rounded recommend-image">
             <div class="p-5 text-center">
               <a href="menu.php?id=2" class="btn bg-black rounded-pill px-4 fs-1 text-white">เส้นใหญ่เย็นตาโฟ</a>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="./images/foods/3.jpg" class="d-block w-100 rounded recommend-image" alt="...">
+            <img src="./images/foods/3.jpg" class="d-block w-100 rounded recommend-image">
             <div class="p-5 text-center">
               <a href="menu.php?id=3" class="btn bg-black rounded-pill px-4 fs-1 text-white">ผัดซีอิ๊ว</a>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="./images/foods/4.jpg" class="d-block w-100 rounded recommend-image" alt="...">
+            <img src="./images/foods/4.jpg" class="d-block w-100 rounded recommend-image">
             <div class="p-5 text-center">
               <a href="menu.php?id=4" class="btn bg-black rounded-pill px-4 fs-1 text-white">ราดหน้า</a>
             </div>

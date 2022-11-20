@@ -88,9 +88,9 @@ class MyDB extends SQLite3 {
                 <div class="mb-3">
                   <label for="atm" class="col-form-label">รหัส ATM:</label>
                   <div class="input-group">
-                    <input type="text" class="form-control" id="atm" name="atm" placeholder="รหัส ATM" autocomplete="off">
+                    <input type="text" class="form-control" id="atm" name="atm" placeholder="xxxxxxxxxxxxxxxx" autocomplete="off">
                     <span class="input-group-text">CVC</span>
-                    <input type="text" class="form-control" id="atm-cvc" name="atm-cvc" placeholder="CVC" autocomplete="off">
+                    <input type="text" class="form-control" id="atm-cvc" name="atm-cvc" placeholder="xxx" autocomplete="off">
                   </div>
                   <figcaption class="figure-caption text-danger" id="err4"></figcaption>
                 </div>

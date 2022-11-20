@@ -4,7 +4,7 @@
 <head>
   <?php include './includes/website_head.html' ?>
   <script src="./scripts/cart.js"></script>
-  <title>สั่งซื้อสำเร็จ | Arsenal FHK</title>
+  <title>ติดตามการสั่งซื้อ | Arsenal FHK</title>
 </head>
 
 <body onload="startTime(); getCartAmount();">
@@ -27,7 +27,7 @@ class MyDB extends SQLite3 {
 
 if (isset($_GET['order']) && strcmp($_GET['order'], "") != 0) {
   $db = new MyDB();
-  $sql = "SELECT * FROM orderlist WHERE tel = '".$_GET['order']."';";
+  $sql = "SELECT * FROM orderlist WHERE tel = '".$_GET['order']."' ORDER BY id DESC;";
   $ret = $db->query($sql);
   $row = $ret->fetchArray(SQLITE3_ASSOC);
   $db->close();
@@ -42,7 +42,7 @@ if (isset($_GET['order']) && strcmp($_GET['order'], "") != 0) {
 
     if ($row['finished'] == '1') {
       $status = '<i class="bi bi-check2-circle" style="font-size:200px;"></i><br>
-      <h1>อาหารส่งเรีบยร้อย</h1><br>
+      <h1>อาหารส่งเรียบร้อย</h1><br>
       <h3>ขอบคุณที่ใช้บริการ</h3>';
     }
     else {
@@ -109,7 +109,7 @@ else {
         foreach ($foodlist_json as $food) {
           echo '<li class="list-group-item">'.$food[2]
           .'&nbsp;&nbsp;&nbsp;&nbsp;<span class="badge bg-white text-primary border border-1 rounded-pill">x'.$food[0]
-          .'</span>&nbsp;<span class="badge bg-primary rounded-pill">'.$food[3].'.-</span></li>';
+          .'</span>&nbsp;<span class="badge bg-primary rounded-pill">'.$food[3].'.-</span><br><i>'.$food[1].'</i></li>';
         }
       }
       else {
