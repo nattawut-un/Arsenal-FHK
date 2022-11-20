@@ -29,24 +29,19 @@ class MyDB extends SQLite3 {
   <div class="container">
     <div class="row">
     <!-- javascript:removeQuery('foodtype'); removeQuery('search'); -->
-      <a class="col btn btn-secondary text-white text-center fs-5 p-2 rounded-pill rounded-end <?php if (!isset($_GET['foodtype']) || strcmp($_GET['foodtype'], '') == 0) {echo 'bg-dark' ;} ?>"
-      href="list.php">
+      <a class="col btn btn-secondary text-white text-center fs-5 p-2 rounded-pill rounded-end <?php if (!isset($_GET['foodtype']) || strcmp($_GET['foodtype'], '') == 0) {echo 'bg-dark' ;} ?>" href="list.php">
         ทั้งหมด
       </a>
-      <button class="col btn btn-secondary text-white text-center fs-5 p-2 rounded-0 <?php if (strcmp($_GET['foodtype'], 'rice') == 0) {echo 'bg-dark' ;} ?>"
-      onclick="addQuery('foodtype', 'rice')">
+      <button onclick="addQuery('foodtype', 'rice')" class="col btn btn-secondary text-white text-center fs-5 p-2 rounded-0 <?php if (isset($_GET['foodtype']) && strcmp($_GET['foodtype'], 'rice') == 0) {echo 'bg-dark' ;} ?> ">
         ข้าว
       </button>
-      <button class="col btn btn-secondary text-white text-center fs-5 p-2 rounded-0 <?php if (strcmp($_GET['foodtype'], 'noodle') == 0) {echo 'bg-dark' ;} ?>"
-      onclick="addQuery('foodtype', 'noodle')">
+      <button onclick="addQuery('foodtype', 'noodle')" class="col btn btn-secondary text-white text-center fs-5 p-2 rounded-0 <?php if (isset($_GET['foodtype']) && strcmp($_GET['foodtype'], 'noodle') == 0) {echo 'bg-dark' ;} ?> ">
         เส้น
       </button>
-      <button class="col btn btn-secondary text-white text-center fs-5 p-2 rounded-0 <?php if (strcmp($_GET['foodtype'], 'drink') == 0) {echo 'bg-dark' ;} ?>"
-      onclick="addQuery('foodtype', 'drink')"">
+      <button onclick="addQuery('foodtype', 'drink')" class="col btn btn-secondary text-white text-center fs-5 p-2 rounded-0 <?php if (isset($_GET['foodtype']) && strcmp($_GET['foodtype'], 'drink') == 0) {echo 'bg-dark' ;} ?> ">
         เครื่องดื่ม
       </button>
-      <button class="col btn btn-secondary text-white text-center fs-5 p-2 rounded-pill rounded-start <?php if (strcmp($_GET['foodtype'], 'icecream') == 0) {echo 'bg-dark' ;} ?>"
-      onclick="addQuery('foodtype', 'icecream')"">
+      <button onclick="addQuery('foodtype', 'icecream')" class="col btn btn-secondary text-white text-center fs-5 p-2 rounded-pill rounded-start <?php if (isset($_GET['foodtype']) && strcmp($_GET['foodtype'], 'icecream') == 0) {echo 'bg-dark' ;} ?> ">
         ไอติม
       </button>
     </div>
